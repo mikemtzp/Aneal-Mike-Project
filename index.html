@@ -13,16 +13,27 @@
     <h1 id="title">This is our first survey form!</h1>
     <p id="description">Thank you for taking your time to fill up our survey form.</p>
     <form id="survey-form">
+  
       <label for="name" id="name-label">Name</label>
-      <input type="text" placeholder="Enter your complete name" required>
+      <input type="text" name="name" id="name" placeholder="Enter your complete name" required>
 
       <label for="email" id="email-label">Email</label>
-      <input type="email" name="email" id="email" required>
+      <input type="email" name="email" id="email" required placeholder="Enter your email">
 
       <label for="number" id="number-label">Age(optional)</label>
-      <input type="number" name="number" id="number">
+      <input type="number" name="number" id="number" min="10" max="100" placeholder="Enter your age">
       
-      <label for="">Which option best describes your current role?</label>
+      <div>
+      <p>Which option best describes your current role?</p>
+      <select name="dropdown" id="dropdown">
+        <option disabled selected value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="half-time student">Half-time student</option>
+        <option value="full-time worker">Full-time worker</option>
+        <option value="half-time worker">Half-time worker</option>
+        <option value="none">None</option>
+      </select>
+      </div>
 
     </form>
 
